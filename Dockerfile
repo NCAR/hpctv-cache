@@ -6,6 +6,4 @@ LABEL repo=cisl-repo \
 
 EXPOSE 443
 
-COPY cache-nginx.conf /etc/nginx/conf.d/default.conf
-
-VOLUME /run/secrets
+VOLUME ["/etc/nginx/conf.d", "/run/secrets"]

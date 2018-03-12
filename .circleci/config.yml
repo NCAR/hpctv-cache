@@ -13,7 +13,7 @@ jobs:
       - setup_remote_docker
 
       - run:
-          name: "Build and store image"
+          name: "Build image"
           command: |
             echo $AWS_REGION
             echo $AWS_ECR_HOST

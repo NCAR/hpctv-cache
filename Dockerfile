@@ -1,4 +1,4 @@
-FROM nginx:1.13.7-alpine AS nginx
+FROM nginx:1.15-alpine AS nginx
 
 RUN apk --update add dumb-init
 
